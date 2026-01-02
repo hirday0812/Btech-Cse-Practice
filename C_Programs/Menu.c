@@ -14,7 +14,7 @@ void factorial() {
 
     else {
         for (int i = 1; i <= n; i++) { // Loop from 1 to n
-            fact = fact * i; // Recursive multiplication
+            fact = fact * i;
         }
         printf("Factorial of %d = %llu\n", n, fact);
     }
@@ -79,7 +79,8 @@ void fibonacci() {
 
 // Displays the menu and handles user input
 int main() {
-    int choice, cont;
+    int choice;
+    char cont;
     do { //do-while loop to repeat menu until user decides to exit
         printf("--------Menu--------\n\n");
 
@@ -128,5 +129,6 @@ int main() {
     printf("===== Code Executed Successfully =====\n");
 
     return 0;
+
 
 }    
